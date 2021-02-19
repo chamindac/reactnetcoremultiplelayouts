@@ -6,11 +6,11 @@ import { AdminMenu } from '../menus/adminMenu';
 export class AdminLayout extends Component {
   static displayName = AdminLayout.name;
 
-  render () {
-    return (
-      <div>
-        <div><AdminMenu /></div>
-        <div>
+    render() {
+        return (
+        <div class="float- container">
+            <div style={{ float: "left", width: "25%" }} ><AdminMenu /></div>
+            <div style={{ float: "left" }}>
             <Container>
               {this.props.children}
             </Container>
